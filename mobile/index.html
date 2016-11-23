@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Votre site est-il mobile-friendly ? Faites le test en 2 clics avec notre outil de diagnostic.">
+  <meta name="author" content="The Computer Firm">
+  <meta name="keywords" content="the computer firm, the computer firm blog, le blog tcf, blog computer firm, article the computer firm, article computer firm, thecomputerfirm, computerfirm, computer firm, tcf agence, agence developpement web,agence communication suisse, agence web suisse, developpement web suisse, developpement site internet, site internet suisse, site internet avocat, site internet medecin,
+  site internet comptable, site internet fiduciaire, raphael sculati, michael dayen, marielle schneider, agence de communication suisse, design internet suisse, référencement web suisse, référencement site internet suisse, site internet responsive suisse
+  design site internet, design website suisse, website suisse, experience utilisateur suisse, référencement suisse, agence référencement suisse">
+  <title>Test Optimisation Mobile - The Computer Firm</title>
+  <meta property="og:title" content="Test Optimisation Mobile - The Computer Firm" />
+  <meta property="og:image" content="https://thecomputerfirm.com/img/mobile-friendly-cover.png"  >
+  <meta property="og:url" content="https://www.thecomputerfirm.com/mobile" />
+  <meta property="og:description" content="Votre site est-il mobile-friendly ? Faites le test en 2 clics avec notre outil de diagnostic." />
+
+  <link rel="icon" type="image/png" href="../img/icon/favicon.png">
+
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="biomp.js"></script>
+
+</head>
+<body id="page-top" class="mobile-friendly-lp">
+  <!-- Navigation -->
+  <nav class="navbar-blog navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <!--  <a class="navbar-brand" href="../"><img src="../img/logo-tcf-1.png" alt="the computer firm logo">-->
+        <a class="navbar-brand page-scroll" href="../">The Computer Firm</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <!-- <a class="page-scroll" href="#challenges">Vos challenges</a> -->
+          </li>
+          <li>
+            <a class="page-scroll" href="../index.html#about">L'Agence</a>
+          </li>
+          <!-- <li>
+            <a class="page-scroll" href="./blog.html">Le lab</a>
+          </li> -->
+          <li>
+            <a class="page-scroll" href="../index.html#services">solutions</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="../portfolio.html">projets</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="../blog/">blog</a>
+          </li>
+          <!-- <li>
+            <a class="page-scroll" href="../index-en.html">EN | FR</a>
+          </li> -->
+          <li class="signup last-child">
+            <a title="New client registration" href="../index.html#contact" class="page-scroll signup-nav" rel="nofollow">
+              <i class="fa fa-envelope"></i> Contactez-nous
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- Header -->
+  <!-- Services Section -->
+
+  <div class="homepage-hero-module">
+    <div class="mobile-friendly-container">
+      <div class="filter">
+        <div class="container">
+
+          <!-- State 1 -->
+          <div class="intro-text mobile-friendly-header-state-1 animated">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <span class="fa-stack fa-3x img-icon-mobile-friendly">
+                  <img class="img-responsive" src="images\mobile-icon-state-1.png" alt="consulting - the computer firm"></img>
+                </span>
+                <div class="intro-heading">VOTRE SITE EST-IL MOBILE-FRIENDLY ?</div>
+                <div class="intro-lead-in">Faites le test en 2 clics.</div>
+              </div>
+            </div>
+            <form id="contactForm" novalidate="">
+              <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-7 col-md-offset-2">
+                    <input type="url" name="url" class="form-control" placeholder="L'adresse de votre site internet *" id="url" required="" data-validation-required-message="Please enter url address." aria-invalid="false">
+                    <p class="help-block text-danger" style="display:none;" id="urlAlert">Url du site internet invalide</p>
+                  </div>
+                    <div class="col-md-1">
+                      <a onclick="startAnalysis()"  class="btn btn-xl btn-xl-contact run-kpi">ANALYSER</a>
+                    </div>
+                  <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+
+                  <h1 class="text-muted" id="wait-text" style="display:none">Veuillez patienter, nous analysons votre site. <br>Cela en vaut la peine. <br>Promis.</h1>
+                  <div class="col-lg-12" id="wait-container"></div>
+                  </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+
+          <!-- State 2 -->
+          <div class="intro-text mobile-friendly-header-state-2 animated fadeIn">
+            <span class="fa-stack fa-5x img-icon-mobile-friendly">
+              <img class="img-responsive" src="images\mobile-icon-state-2.png" alt="consulting - the computer firm"></img>
+            </span>
+            <div class="intro-heading">UNE PETITE SECONDE...</div>
+            <div class="intro-lead-in">Veuillez patienter, nous analysons votre site. <br>Cela en vaut la peine. <br>Promis.</div>
+            <img src="../img/icon/ring-alt.svg" class="loader-state-2"></img>
+          </div>
+
+          <!-- State 3.1 -->
+          <div class="intro-text mobile-friendly-header-state-3-1">
+            <span class="fa-stack fa-3x img-icon-mobile-friendly">
+              <img class="img-responsive" src="images\mobile-icon-state-3-1.png" alt="consulting - the computer firm"></img>
+            </span>
+            <div class="intro-heading">FÉLICITATIONS ! VOTRE SITE EST MOBILE-FRIENDLY</div>
+            <div class="intro-lead-in">Le design de votre page s’adapte selon qu’il soit consulté depuis un écran d’ordinateur, une tablette ou un smartphone. Il est donc optimisé pour une expérience de navigation fluide, et favorisé par Google dans les résultats de recherche.</div>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 text-center">
+                <h4>BOOSTEZ VOTRE POTENTIEL DIGITAL</h4>
+                <p class="text-muted">Une idée? The Computer Firm est une agence web et marketing digital. Nous sommes à votre disposition pour vous accompagner dans vos projets web, stratégie marketing et création et gestion d’image de marque. </p>
+                <a id="cta-discovery" href="../" class="page-scroll btn-xl-contact btn-xl-contact btn btn-xl success-kpi">Découvrez notre agence</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- State 3.2 -->
+          <div class="intro-text mobile-friendly-header-state-3-2 animated fadeInDown">
+            <!-- <div class="row"> -->
+            <!-- <span class="fa-stack fa-3x img-icon-mobile-friendly">
+            </span> -->
+            <div class="intro-heading">OH NON… VOTRE SITE N’EST PAS MOBILE-FRIENDLY</div>
+            <p class="intro-lead-in">Il s’avère que votre site web n’est pas optimisé pour une consultation sur tablette et smartphone. Cela signifie que 40% des utilisateurs n’ont pas pleinement accès aux informations qu’ils recherchent sur vous.</p>
+            <!-- </div> -->
+            <div class="row">
+              <div class="col-md-offset-1 col-md-6">
+              <div class="diagnostic-list row">
+                <h4 class="intro-lead-in">Hmmm… Nous avons constaté les problèmes suivants :</h4>
+                <div class="diagnostic-line col-10 col-offset-1" id="test-text-size">
+                  <div class="diagnostic-number-div ">
+                    <div class="diagnostic-number">X</div>
+                  </div>
+                  <div class="diagnostic-description">Vos textes sont trop petits</div>
+                </div>
+                <div class="diagnostic-line col-10 col-offset-1" id="test-screen-size">
+                  <div class="diagnostic-number-div">
+                    <div class="diagnostic-number">X</div>
+                  </div>
+                  <div class="diagnostic-description col">Pas de vue adaptative pour petits écrans</div>
+                </div>
+                <div class="diagnostic-line col-10 col-offset-offset-1" id="test-content-size">
+                  <div class="diagnostic-number-div">
+                    <div class="diagnostic-number">X</div>
+                  </div>
+                  <div class="diagnostic-description">La taille du contenu n'est pas adaptée à la fenêtre d'affichage</div>
+                </div>
+                <div class="diagnostic-line col-10 col-offset-offset-1" id="test-link-size">
+                  <div class="diagnostic-number-div">
+                    <div class="diagnostic-number">X</div>
+                  </div>
+                  <div class="diagnostic-description">Les liens sont trop proches les uns des autres</div>
+                </div>
+              </div>
+              </div>
+
+              <div class="col-md-5">
+                <!-- <div id="preview"></div> -->
+                <img class="img-responsive" src="images\mobile-icon-state-3-2.png" alt="consulting - the computer firm"></img>
+              </div>
+            </div>
+
+            <div id="cta-devis" class="row">
+              <div class="col-md-8 col-md-offset-2 text-center">
+                <h4>UN DEVIS GRATUIT, SANS ENGAGEMENT</h4>
+                <p class="text-muted">Bonne nouvelle : nous pouvons vous aider. The Computer Firm est une agence web et marketing digital. Nous préparons pour vous, sans frais et sans engagement, une estimation chiffrée de la refonte et de l’optimisation de votre site internet. Laissez-nous votre email et nous vous recontacterons sous peu.</p>
+                <form id="contactForm-mobile-friendly" novalidate="">
+                  <div id="cta-audit" class="row">
+                      <div class="form-group">
+                        <div class="col-md-7 col-md-offset-2">
+                        <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail *" id="email" required="" data-validation-required-message="Veuillez entrer votre adresse e-mail" aria-invalid="false">
+                        <p class="help-block text-danger" style="display:none;" id="emailAlert">Adresse email invalide</p>
+                      </div>
+                        <div class="col-md-1">
+                          <a  onclick="myFunction()" data-toggle="modal" class="btn btn-xl btn-xl-contact fail-kpi">Envoyer</a>
+                          <!-- <a onclick="myFunction()"  class="btn btn-xl btn-xl-contact">Envoyez</a> -->
+                        </div>
+                      <!-- <div class="col-lg-12 text-center">
+                        <div id="success"></div>
+
+                      <h1 class="text-muted" id="wait-text" style="display:none">Veuillez patienter pendant que nous analysons votre site...</h1>
+                      <div class="col-lg-12" id="wait-container"></div>
+                      </div> -->
+                      </div>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- State 3.3 -->
+          <div class="intro-text mobile-friendly-header-state-3-3 animated fadeInDown">
+            <span class="fa-stack fa-3x img-icon-mobile-friendly">
+              <img class="img-responsive" src="images\mobile-icon-state-3-3.png" alt="consulting - the computer firm"></img>
+            </span>
+            <div class="intro-heading">OOPS ! UNE ERREUR S’EST PRODUITE.</div>
+            <div class="intro-lead-in">Il s’est passé quelque chose d’étrange durant l’analyse de votre site internet. Veuillez réessayer.</div>
+            <form id="contactForm" novalidate="">
+              <div class="row">
+                  <div class="form-group">
+                    <!-- <div class="col-md-5 col-md-offset-3">
+                      <input type="url" name="url" class="form-control" placeholder="L'adresse de votre site internet *" id="url2" required="" data-validation-required-message="Please enter url address." aria-invalid="false">
+                    </div> -->
+                    <div class="col-md-8 col-md-offset-2">
+                      <a onclick="myFunction2()"  class="btn btn-xl btn-xl-contact error-kpi">Refaire le test</a>
+                    </div>
+                  <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+
+                  <h1 class="text-muted" id="wait-text" style="display:none">Veuillez patienter pendant que nous analysons votre site...</h1>
+                  <div class="col-lg-12" id="wait-container"></div>
+                  </div>
+                  </div>
+                </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Services Modal Legal -->
+<div class="portfolio-modal modal fade" id="serviceModalContact" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1  ">
+          <div class="modal-body">
+            <h2 style="color:black;">VOTRE DEMANDE A ÉTÉ ENVOYÉE !</h2><br><br>
+            <div class="row">
+              <div class="col-lg-6"><br>
+                <img class="img-responsive img-centered img-email" src="../img/icon/icon-email.png" alt="Icon Mail - the computer firm">
+
+              </div>
+              <div class="col-lg-6">
+                <!-- <h3>A propos</h3><br> -->
+                <p class="text-muted text-justify" style="color:black;">Nous allons vous contacter dans les meilleurs délais afin de convenir d'un rendez-vous durant lequel vous pourrez nous exposer vos besoins, idées et exigences.
+                </p>
+                <p class="text-muted text-justify" style="color:black;">Votre adresse email :  <span class="text-muted text-justify" style="color: #2F7BBD;" id="emailWritten"></span></p>
+                <p class="text-muted text-justify" style="color:black;">En vous remerciant de l'intérêt porté à The Computer Firm, nous vous souhaitons une agréable journée.
+                </p><p class="text-muted text-justify" style="color:black;">Pour toute information complémentaire, n'hésitez pas à nous contacter directement :
+                  <a href="mailto:hello@thecomputerfirm.com"><span class="highlight">hello@thecomputerfirm.com</span></a> </p>
+                  <br><br>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i> Revenir au site internet</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Bootstrap Core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="./agency.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script>
+<script src="../js/jquery.vide.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/cbpAnimatedHeader.js"></script>
+<!-- Contact Form JavaScript -->
+<script src="../js/jqBootstrapValidation.js"></script>
+<script src="./script.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="../js/agency.js"></script>
+<script src='nprogress.js'></script>
+<link rel='stylesheet' href='nprogress.css'/>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-85760936-1', 'auto');
+ga('send', 'pageview');
+
+// ------------- Analytics Goals ----------------
+
+$(document).on('click', '.run-kpi', function(event){
+  ga('send', 'event', {
+    eventCategory: 'click',
+    eventAction: 'run',
+    eventLabel: $('url').val()
+  });
+});
+
+$(document).on('click', '.load-result-kpi', function(event){
+  ga('send', 'event', {
+    eventCategory: 'load',
+    eventAction: 'result'
+  });
+});
+
+$(document).on('click', '.success-kpi', function(event){
+  ga('send', 'event', {
+    eventCategory: 'click',
+    eventAction: 'success'
+  });
+});
+
+$(document).on('click', '.fail-kpi', function(event){
+  ga('send', 'event', {
+    eventCategory: 'click',
+    eventAction: 'fail'
+  });
+});
+
+$(document).on('click', '.fail-diagnostic-kpi', function(event){
+  ga('send', 'event', {
+    eventCategory: 'load',
+    eventAction: 'diagnostic'
+  });
+});
+
+$(document).on('click', '.error-kpi', function(event){
+  ga('send', 'event', {
+    eventCategory: 'click',
+    eventAction: 'error'
+  });
+});
+
+</script>
+
+<!-- Hotjar Tracking Code for https://www.thecomputerfirm.com/ -->
+<script>
+(function(h,o,t,j,a,r){
+  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  h._hjSettings={hjid:321270,hjsv:5};
+  a=o.getElementsByTagName('head')[0];
+  r=o.createElement('script');r.async=1;
+  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  a.appendChild(r);
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+</body>
+
+</html>

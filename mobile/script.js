@@ -40,7 +40,20 @@ function requestWebsiteInsight(url) {
       if(pass){
         $('.mobile-friendly-header-state-2').hide();
         $('.mobile-friendly-header-state-3-1').show();
-        // $( '.mobile-friendly-lp' ).css( "background-color", "#27AE61");
+        $( '.mobile-friendly-lp' ).css( "background-color", "#27AE61");
+
+        if(configureViewport < 8){
+          $('#test-screen-size-positive').show();
+        }
+        if(sizeContentToViewport < 8){
+          $('#test-content-size-positive').show();
+        }
+        if(sizeTapTargetsAppropriately < 8){
+          $('#test-link-size-positive').show();
+        }
+        if(useLegibleFontSizes < 8){
+          $('#test-text-size-positive').show();
+        }
         // TODO: display score
         // TODO: display success img
       } else {
@@ -120,7 +133,7 @@ function startAnalysis() {
 
 
 function myFunction() {
-    var email = document.getElementById('email').value;
+    var email = document.getElementById('email1').value;
 
     if(validateForm(email)){
       $( "#emailAlert" ).hide();
@@ -128,7 +141,7 @@ function myFunction() {
       var request = [];
       request.client = "tcf";
       request.category = "contact";
-      request.content = "Mobile friendly test - contact";
+      request.content = "Mobile friendly test - contact: " + document.getElementById('url').value + " - FR";
       request.emailContact = email;
       // request.content.push({email : email});
       // JSON.stringify(request);
@@ -137,12 +150,90 @@ function myFunction() {
 
       $("#serviceModalContact").modal()
       // $( "#emailWritten" ).text("");
-      $( "#emailWritten" ).text(document.getElementById('email').value);
+      $( "#emailWritten" ).text(document.getElementById('email1').value);
 
 
     } else {
       $( "#emailAlert" ).show();
     }
+}
+
+function myFunction3En() {
+    var email = document.getElementById('email2').value;
+
+    if(validateForm(email)){
+      $( "#emailAlert" ).hide();
+      // console.log("valid email : " + email);
+      var request = [];
+      request.client = "tcf";
+      request.category = "contact";
+      request.content = "Mobile friendly test - contact: " + document.getElementById('url').value + " - EN";
+      request.emailContact = email;
+      // request.content.push({email : email});
+      // JSON.stringify(request);
+      console.log(request);
+      saveRequest(request);
+
+      $("#serviceModalContact").modal()
+      // $( "#emailWritten" ).text("");
+      $( "#emailWritten" ).text(document.getElementById('email2').value);
+
+
+    } else {
+      $( "#emailAlert" ).show();
+    }
+}
+
+function myFunction3(){
+  var email = document.getElementById('email').value;
+
+  if(validateForm(email)){
+    $( "#emailAlert" ).hide();
+    // console.log("valid email : " + email);
+    var request = [];
+    request.client = "tcf";
+    request.category = "contact";
+    request.content = "Mobile friendly test - contact: " + document.getElementById('url').value + " - FR";
+    request.emailContact = email;
+    // request.content.push({email : email});
+    // JSON.stringify(request);
+    console.log(request);
+    saveRequest(request);
+
+    $("#serviceModalContact").modal()
+    // $( "#emailWritten" ).text("");
+    $( "#emailWritten" ).text(document.getElementById('email').value);
+
+
+  } else {
+    $( "#emailAlert" ).show();
+  }
+}
+
+function myFunctionEn(){
+  var email = document.getElementById('email3').value;
+
+  if(validateForm(email)){
+    $( "#emailAlert" ).hide();
+    // console.log("valid email : " + email);
+    var request = [];
+    request.client = "tcf";
+    request.category = "contact";
+    request.content = "Mobile friendly test - contact: " + document.getElementById('url').value + " - EN";
+    request.emailContact = email;
+    // request.content.push({email : email});
+    // JSON.stringify(request);
+    console.log(request);
+    saveRequest(request);
+
+    $("#serviceModalContact").modal()
+    // $( "#emailWritten" ).text("");
+    $( "#emailWritten" ).text(document.getElementById('email3').value);
+
+
+  } else {
+    $( "#emailAlert" ).show();
+  }
 }
 
 function validateForm(x) {

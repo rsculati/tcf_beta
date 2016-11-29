@@ -2005,8 +2005,7 @@ background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 5
 }
 
 
-.mobile-friendly-lp #cta-discovery,
-.mobile-friendly-lp #cta-audit
+.mobile-friendly-lp #cta-audit,
 .mobile-friendly-lp #cta-devis{
   margin-top:30px;
 }
@@ -2045,6 +2044,9 @@ margin-bottom: 30px;
   position: relative;
 }
 
+.mobile-friendly-lp .positive-diagnostic{
+  background-color: #2ecc71;
+}
 .mobile-friendly-lp #contactForm-mobile-friendly{
   margin-top:20px;
 }
@@ -2070,6 +2072,22 @@ margin-bottom: 30px;
 }
 
 #test-content-size {
+  display: none;
+}
+
+#test-link-size-positive {
+  display: none;
+}
+
+#test-screen-size-positive {
+  display: none;
+}
+
+#test-text-size-positive {
+  display: none;
+}
+
+#test-content-size-positive {
   display: none;
 }
 

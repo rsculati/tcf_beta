@@ -433,7 +433,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,1);
 
 @media(min-width:768px) {
   .navbar-default {
-    padding: 45px 0;
+    padding: 65px 0;
     border: 0;
     background-color: transparent;
     -webkit-transition: padding .3s;
@@ -1842,7 +1842,7 @@ background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 5
   background-color: #eaedef;
   padding-top: 15px;
   padding-bottom: 10px;
-  margin-top: -5px;
+  margin-top: -20px;
 
 }
 
@@ -2497,5 +2497,131 @@ margin-top: 1.875em;
 
   .btn-xl {
     font-size: 0.7em;
+  }
+}
+/**changement mike icons / banner industry 23/11*/
+
+.industry-subsection{
+  width:100%;
+  height:200px;
+}
+
+.column-industry{
+  height:200px;
+  width:25%;
+  float:left;
+}
+
+@media(max-width:720px) {
+  .column-industry{
+    width:50%;
+  }
+
+  .industry-subsection{
+    height:400px;
+  }
+}
+
+.img-icon-industry{
+  height:120px;
+  margin-top: 50px;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.column-industry-finance{
+  background-image: url(../img/industry-bg-finance.jpg);
+  background-size: cover;
+}
+
+.column-industry-justice{
+  background-image: url(../img/industry-bg-justice.jpg);
+  background-size: cover;
+}
+
+.column-industry-immobilier{
+  background-image: url(../img/industry-bg-immobilier.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.column-industry-sante{
+  background-image: url(../img/industry-bg-sante.jpg);
+  background-size: cover;
+}
+
+
+
+/*smart add top */
+
+.top-ads-slide-in {
+    height: 60px;
+    color: #fff;
+    background: #232A34;
+    width: 100%;
+    top:0;
+    left:0;
+    right:0;
+    position: fixed;
+    z-index: 9999;
+}
+
+.top-ads-slide-in-content {
+    width: 100vh;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+.top-ads-slide-in-content-inner {
+    margin: 0 auto;
+
+}
+
+.top-ads-slide-in-content p {
+    margin: 20px 0 0 127px;
+    padding: 0;
+    float: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.top-ads-slide-in-button {
+    background-color: #2f7bbd;
+    border-color: #2f7bbd;
+    color: white;
+    font: 500 12px/18px "brandon-grotesque", sans-serif;
+    letter-spacing: 0.1em;
+    padding: 0.75em 2.8125em;
+    text-transform: uppercase;
+    float:left;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    padding: 7px 20px;
+    margin: 15px 0 0 20px;
+}
+
+.top-ads-slide-in-button:hover {
+  border-color: #3683BC;
+  color: #fff;
+  background-color: #3683BC;
+}
+
+.top-ads-slide-in-close-promo {
+    right: 20px;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+}
+
+@media(max-width:768px) {
+  .top-ads-slide-in {
+      display: none;
+      visibility: hidden;
   }
 }
